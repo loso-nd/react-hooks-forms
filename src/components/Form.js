@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 
-function Form() {
-  const [firstName, setFirstName] = useState("John");
-  const [lastName, setLastName] = useState("Henry");
+function Form({firstName, lastName, handleChangeFirst, handleChangeLast}) {
+  // const [firstName, setFirstName] = useState("John");
+  // const [lastName, setLastName] = useState("Henry");
   const [newsetter, setNewsetter] = useState(false)
 
-    function handleChangeFirst(e){
-      console.log("First : ", e.target.value)
-      setFirstName(e.target.value)
-    }
+    // function handleChangeFirst(e){
+    //   console.log("First : ", e.target.value)
+    //   setFirstName(e.target.value)
+    // }
 
-    function handleChangeLast(e){
-      console.log("Last : ", e.target.value)
-      setLastName(e.target.value)
-    }
+    // function handleChangeLast(e){
+    //   console.log("Last : ", e.target.value)
+    //   setLastName(e.target.value)
+    // }
 
     function handleNewsletterChange(e) {
       console.log("Are you subscribed: ", e.target.checked)

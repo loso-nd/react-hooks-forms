@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import Form from "./Form"
+import DisplayData from "./DisplayData"
 
 function Parent() {
 
@@ -16,6 +17,7 @@ function Parent() {
         setLastName(e.target.value)
       }
     return (
+        <>
         <Form
             firstName={firstName}
             lastName={lastName}
@@ -23,6 +25,8 @@ function Parent() {
             handleChangeLast={handleChangeLast}>
 
         </Form>
+        <DisplayData firstName={firstName} lastName={lastName}/>
+        </>
     )
 }
 
